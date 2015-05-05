@@ -53,8 +53,11 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  root "events#index"
+
   get "events" => "events#index"
 
-  get "events/:id" => "events#show"
+  get "events/:id" => "events#show", as: "event"
 
 end

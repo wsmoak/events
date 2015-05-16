@@ -60,4 +60,6 @@ Rails.application.routes.draw do
 
   get "events/:id" => "events#show", as: "event"
 
+  get "events/:id/edit" => "events#edit", as: "edit_event"
+
 end
